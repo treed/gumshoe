@@ -33,7 +33,8 @@
 ;;; Code:
 
 (require 'gumshoe-core)
-(require 'gumshoe-persp)
+(when (require 'perspective nil t)
+  (require 'gumshoe-persp))
 
 (provide 'gumshoe)
 ;;; gumshoe.el ends here
